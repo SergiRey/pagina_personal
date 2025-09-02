@@ -68,7 +68,7 @@ body{
 
 
 .imagen{
-    background-image: url(/assets/img/fondo_tipo.jpg);
+    background-image: url(Personal/assets/img/fondo_tipo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,4 +144,5 @@ nav ul li{
 nav ul li a:hover{
     background-color: #5c7c8b;
     color: #000;
+
 }
