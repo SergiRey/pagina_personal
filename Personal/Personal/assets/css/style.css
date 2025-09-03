@@ -1,0 +1,207 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(
+        rgb(172, 16, 16, 0.8),
+        rgb(172, 16, 16,0.8)), url(https://images.pexels.com/photos/978462/pexels-photo-978462.jpeg?cs=srgb&dl=pexels-kasperphotography-978462.jpg&fm=jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    align-items: center;
+        background-color: rgb(172, 16, 16);
+}
+
+/*DISEÑO DE LOS CIRCULITOS/CHECODEX*/
+.circle-top-left {
+    display: flex;
+    gap: 8px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    box-sizing: border-box;
+}
+
+#circulo_azul {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+    background: #2575d1;
+}
+
+#circulos_rojo {background: #8b1515;}
+#circulos_ama {background: #c9cc19;}
+#circulos_verde {background: #2f8b1d;}
+
+#CHECODEX{
+    display: flex;
+    justify-content: center;
+    background-color: #e4dada;
+    margin: 0 auto;
+    padding: .5rem 5rem 0rem 5rem;
+    border: 2px solid #1d0404;
+}
+/*FIN DISEÑO DE LOS CIRCULITOS/CHECODEX*/
+/*DISEÑO DE LA SCROLLBAR*/
+::-webkit-scrollbar {width: 12px;}
+
+::-webkit-scrollbar-track {
+    background: #911c1c;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(42, 191, 211);
+    border-radius: 50px 0px 0px 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {background: #1f8e9c;}
+/*FIN DISEÑO DE LA SCROLLBAR*/
+/*DISEÑO DEL CONTENIDO*/
+.content{
+    margin: 120px 50px 50px 50px ;
+    padding: 1rem;
+    border: 1.5rem solid #f7ebeb;
+    border-radius: 50px;
+    background-image: linear-gradient(
+        rgba(95, 128, 219, 0.8),
+        rgba(95, 128, 219,0.8)), url(https://img.freepik.com/vector-gratis/fondo-pantalla-semitono-abstracto_23-2148598189.jpg?semt=ais_hybrid&w=740&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+}
+
+.imagen{
+    background-image: linear-gradient(
+        rgba(23, 1, 26, 0.8),
+        rgba(23, 1, 26, 0.5)), url(/assets/img/fondo_tipo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    border-radius: 50px 50px 150px 150px;
+    margin: 0 auto;
+}
+
+.carrusel{
+    margin: auto;
+    padding: auto;
+    border-radius: 50px 50px 0px 0px;
+    width: 100%;
+    height: 250px; /*1REM = 16px*/
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(8, 15, 39, 0.219);
+}
+
+.galeria{
+    display: flex;
+    width: max-content;
+    animation: scroll 35s linear infinite;
+}
+
+.galeria img{
+    width: 250px;
+    height: 250px;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-160rem);
+    }
+}
+
+.foot{
+    height: auto;
+    margin: 0px 20px 20px 20px;
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+
+.data{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.tipoicon{
+    width: 65px;
+}
+
+.data h1{
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    text-decoration: solid;
+}
+
+#descripcion{
+    margin: 0px 50px 50px 50px;
+    padding: 25px;
+    background-color: rgba(189, 13, 212, 0.2);
+    color: rgb(137, 86, 153);
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50px;
+}
+
+#descripcion:hover{
+    transition: all .5s ease;
+    color: rgb(232, 217, 236);
+    background-color: rgba(189, 13, 212, 0.3);
+    box-shadow: 0px 0px 75px rgb(118, 9, 133);
+}
+
+.redes-img{
+    width: 80px;
+    padding: 0px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#redes h3{
+    font-size: medium;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+#ig{
+    height: auto;
+    width: 80px;
+}
+
+#ig:hover{
+    transition: all .2s ease;
+    background-color: rgba(149, 16, 167, 0.2);
+    box-shadow: 0px 0px 75px rgb(118, 9, 133);
+}
+
+#fb{
+    height: auto;
+    width: 80px;
+}
+
+#fb:hover{
+    transition: all .2s ease;
+    background-color: rgba(149, 16, 167, 0.2);
+    box-shadow: 0px 0px 75px rgb(118, 9, 133);
+}
